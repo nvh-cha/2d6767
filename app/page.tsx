@@ -4,6 +4,7 @@ import { useState } from "react";
 import { GraduationCap } from "lucide-react";
 import CalendarView from "@/components/CalendarView";
 import EventForm from "@/components/EventForm";
+import DriveSection from "@/components/DriveSection";
 
 export default function Home() {
   const [refreshKey, setRefreshKey] = useState(0);
@@ -15,6 +16,8 @@ export default function Home() {
 
   return (
     <main className="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:py-12">
+      <DriveSection />
+
       <header className="mb-8 flex items-center gap-3">
         <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-indigo-600 text-white shadow-sm">
 <img
